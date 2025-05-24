@@ -42,7 +42,7 @@ function Partner() {
         </a>
 
         <a
-          href="https://alfacens.com"
+          href="https://alfacenscapital.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="gratitude-card-link"
