@@ -1,0 +1,53 @@
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.step-box {
+  background-color: #fff8dc; /* nền vàng nhẹ kiểu parchment */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.4s ease;
+  border-left: 6px solid #facc15;
+  cursor: default;
+}
+
+.step-box:hover {
+  transform: translateY(-4px) scale(1.01) rotate(-0.2deg);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+  border-left-color: #fbbf24;
+  background: linear-gradient(120deg, #fff8dc, #fef3c7);
+}
+
+.step-box h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #b45309;
+  text-shadow: 1px 1px 0 #fff3cd;
+}
+
+.step-box p {
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Tạo hiệu ứng bậc thang bằng margin-top tăng dần */
+.step-2 {
+  margin-left: 2rem;
+}
+.step-3 {
+  margin-left: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .step-2,
+  .step-3 {
+    margin-left: 0;
+  }
+}
